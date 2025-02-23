@@ -9,6 +9,7 @@ import Stock
 #주식 폴더 분활, 주식 폴더 파일 불러오기(line 2) - 정우
 #정우
 
+#우혁
 
 money = 0
 happiness = 50  # 행복지수 초기값 설정
