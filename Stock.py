@@ -7,16 +7,16 @@ def Stock_main():
     img =Image.open('./A.gif')
     bg = ImageTk.PhotoImage(img)
 
-    win.geometry("650x450")
+    st.geometry("650x450")
 
     # 배경을 Label을 이용하여 처리
     label = Label(st, image=bg)
     label.place(x = -2,y = -2)
 
-    button_gambling = Button(st, text='도박', fg='white', bg='black', font=15, width=15, height=3, command=Gambling)
+    #button_gambling = Button(st, text='도박', fg='white', bg='black', font=15, width=15, height=3, command=Gambling)
 
     # Tkinter 수행
-    win.mainloop()
+    st.mainloop()
 
      
 
