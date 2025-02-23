@@ -1,9 +1,12 @@
 from tkinter import *
+import Stock
 
 #버그가 좀 많이 있어알아서 수정해
 #부동산 광클하면 떡상 속도 ㅈㄴ 높아짐.
 #도박 -말곤 없어 아직. 나중에 만들게
 #주식이랑 상점 만들어봐 button3.grid_forget() 이거처럼 하면 버튼 숨길 수 있으니깐 잘 활용 하고 나중에 부동산이랑 도박 수정할게
+#주식 만들었는데 버그가 한둘이 아니더라 개망겜 - 정우
+#주식 폴더 분활, 주식 폴더 파일 불러오기(line 2) - 정우
 
 
 money = 0
@@ -12,6 +15,7 @@ property_value = 1000000  # 초기 건물 가격
 property_owned = False  # 건물 보유 여부
 tk = Tk()
 
+    
 def Money():
     global money
     money += 1000000
@@ -101,7 +105,7 @@ button3.grid(row=1, column=0, columnspan=2, sticky="ew", padx=5, pady=5)  # 버�
 
 # 각 버튼 세로로 배치
 button_gambling = Button(tk, text='도박', fg='white', bg='black', font=15, width=15, height=3, command=Gambling)
-button_stock = Button(tk, text='주식', fg='white', bg='black', font=15, width=15, height=3, command=Money)
+button_stock = Button(tk, text='주식', fg='white', bg='black', font=15, width=15, height=3, command=Stock.Stock_main)
 button_realestate = Button(tk, text='부동산', fg='white', bg='black', font=15, width=15, height=3, command=BuyRealestate)
 button_mall = Button(tk, text='백화점', fg='white', bg='black', font=15, width=15, height=3, command=Money)
 
