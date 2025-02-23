@@ -8,7 +8,7 @@ import Stock
 #주식 만들었는데 버그가 한둘이 아니더라 개망겜 - 정우
 #주식 폴더 분활, 주식 폴더 파일 불러오기(line 2) - 정우
 #정우 핸썸
-#test
+#testfgdrtdrxdt
 #우혁
 #sdf
 
